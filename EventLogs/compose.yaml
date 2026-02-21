@@ -1,0 +1,12 @@
+﻿services:
+  eventlog-api:
+    build:
+      context: .
+      dockerfile: DockerFile.DockerFile
+    container_name: eventlog_container
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+    restart: always

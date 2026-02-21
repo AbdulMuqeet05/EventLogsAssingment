@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  eventlog-api:
+    build:
+      context: ./EventLogs/
+      dockerfile: DockerFile.DockerFile
+    container_name: eventlog_container
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+    restart: always
+
+  frontend:
+    build:
+      context: ./EventLogsFE/
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+    volumes:
+      - ./src:/app/src
+    restart: always

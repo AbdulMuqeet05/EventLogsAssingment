@@ -1,0 +1,16 @@
+
+.DS_Store
+.vscode/
+.idea/
+
+#FrontEnd
+EventLogsFE/node_modules/
+EventLogsFE/dist/
+EventLogsFE/.angular/
+EventLogsFE/npm-debug.log*
+
+# Backend (ASP.NET Core)
+EventLogs/bin/
+EventLogs/obj/
+EventLogs/appsettings.Development.json
+EventLogs/*.user
