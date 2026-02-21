@@ -1,0 +1,22 @@
+<div class="table-container">
+  <table *ngIf="events.length > 0; else loading">
+    <thead>
+      <tr>
+        <th>Message</th>
+        <th>Severity</th>
+        <th>Timestamp</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of events">
+        <td>{{ item.message }}</td>
+        <td>{{ item.severity }}</td>
+        <td>{{ item.timeStamp | date:'medium' }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #loading>
+    <p>No logs found or still loading...</p>
+  </ng-template>
+</div>
