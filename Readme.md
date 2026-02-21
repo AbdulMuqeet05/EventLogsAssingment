@@ -17,12 +17,12 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ``` text
 src/app/
-├── core/                # Global singletons (Interceptors, Auth, Base Services)
+├── core/                # Global singletons (Interceptors)
 │   └── interceptors/    # API Base URL & Header logic
-├── shared/              # Reusable UI components (Tables, Spinners, Pagination)
+├── shared/              # Reusable UI components
 ├── features/            # Business logic modules
-│       ├── models/      # TypeScript Interfaces (EventLog)
-│       ├── services/    # Logic & State (BehaviorSubjects)
+│       ├── models/      # TypeScript Interfaces 
+│       ├── services/    # Logic & State
 │       └── event-logs.component.ts
 ├── app.config.ts        # Application providers (HttpClient, Routing)
 └── app.routes.ts        # Main routing configuration
@@ -34,9 +34,9 @@ src/app/
 2) npm run start
 
 
-# Event Logging System (.NET 9)
+# Event Logging System (.NET 10)
 
-A real-time log generation and monitoring system built with **ASP.NET Core 9**. This project demonstrates Clean Architecture, thread-safe background processing, and containerization.
+A real-time log generation and monitoring system built with **ASP.NET Core 10**. This project demonstrates Clean Architecture, thread-safe background processing, and containerization.
 
 ## Architecture
 
